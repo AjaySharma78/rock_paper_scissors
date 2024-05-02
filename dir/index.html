@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/5ee22cfab6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div
+      class="w-full h-screen flex justify-center items-center flex-col bg-[#3d3d3d]"
+    >
+      <div class="w-[22rem] h-[25rem] lg:h-4/6 lg:w-3/6 bg-[#2e2e2e]">
+        <div
+          id="choices"
+          class="h-3/5 lg:h-4/6 flex items-center justify-around"
+        >
+          <div
+            id="rock"
+            class="choice h-24 w-24 lg:h-40 lg:w-40 flex justify-center items-center rounded-[40%] bg-[#5d5d5d] mt-5 text-7xl text-center cursor-pointer hover:opacity-35"
+          >
+            <i class="fa-solid fa-hand-fist" style="color: #ffffff"></i>
+          </div>
+          <div
+            id="paper"
+            class="choice h-24 w-24 lg:h-40 lg:w-40 flex justify-center items-center rounded-[40%] bg-[#5d5d5d] mt-5 text-7xl text-center cursor-pointer hover:opacity-35"
+          >
+            <i class="fa-solid fa-hand-spock" style="color: #ffffff"></i>
+          </div>
+          <div
+            id="scissor"
+            class="choice h-24 w-24 lg:h-40 lg:w-40 flex justify-center items-center rounded-[40%] bg-[#5d5d5d] mt-5 text-7xl text-center cursor-pointer hover:opacity-35"
+          >
+            <i class="fa-solid fa-hand-peace" style="color: #ffffff"></i>
+          </div>
+        </div>
+        <div class="text-center flex justify-center gap-5">
+          <div class="w-14 bg-[#d1d1d1]">
+            <p id="user_score">0</p>
+            <p class="border-t-[1px] border-black">You</p>
+          </div>
+          <div class="w-14 bg-[#d1d1d1]">
+            <p id="comp_score">0</p>
+            <p class="border-t-[1px] border-black">Comp</p>
+          </div>
+        </div>
+        <div
+          id="message_box"
+          class="text-center bg-[#e7e7e752] px-2 py-2 mt-2 text-3xl"
+        >
+          <p id="message">Play your move</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
